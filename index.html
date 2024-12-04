@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90' font-size='90'>📌</text></svg>">
   <title>DevOps Hub</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
@@ -11,25 +10,11 @@
     body {
       font-family: 'Arial', sans-serif;
     }
-    .search-results {
-      display: none;
-      position: absolute;
-      top: 50px;
-      left: 20px;
-      right: 20px;
-      background-color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-height: 300px;
-      overflow-y: auto;
-      z-index: 10;
-    }
-    .search-results p {
-      padding: 10px;
-      cursor: pointer;
-    }
-    .search-results p:hover {
-      background-color: #f1f1f1;
-    }
+.bg-white {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1); /* Shadow on all sides, but top shadow too */
+}
+
+
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -38,7 +23,6 @@
   <header class="bg-black py-4 shadow">
     <div class="container mx-auto flex items-center justify-between px-6">
       <a href="#" class="text-xl font-bold text-white">DevOps Hub</a>
-    
       <!-- Navigation Links -->
       <nav class="hidden md:flex space-x-9">
         <a href="notes-mainpage.html" class="text-white hover:text-gray-200">Learning Notes</a>
@@ -98,72 +82,76 @@
   </div>
 </section>
   <!-- Tutorials Section -->
-<section id="tutorials" class="pt-0 pb-14 bg-white-200">
-    <div class="container mx-auto px-6">
-  
-       <div class="bg-white p-6 rounded-lg mb-6" style="box-shadow: 0 -10px 15px rgba(0, 0, 0, 0)">
-        <div align="center">
-          <img src="https://github.com/user-attachments/assets/0273621a-0af7-472d-97e4-f23691017ef9" alt="vpc-example-private-subnets">
-        </div>
-  
-        <p class="text-md text-black-700 mt-6 text-center text-justify">
-          Welcome to the <strong>DevOps Hub</strong> ! is designed to guide you through learning DevOps concepts with practical, step-by-step tutorials, project documentation, and notes. Whether you're new to <strong>DevOps/Cloud</strong> or want to deepen your expertise, this hub has everything you need.You'll find step-by-step guides covering a wide range of topics such as CI/CD pipelines, cloud platforms like AWS and Azure, Docker, Kubernetes, Terraform, and much more.
-        </p>
-                 <div class="mt-6 flex justify-center space-x-6">
-  <!-- Button for Learning Notes -->
-  <a href="notes-mainpage.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition flex items-center justify-center gap-2 w-full sm:w-auto">
-    <span>📚</span>
-    <span>Learning Notes</span>
-  </a>
+<!-- Tutorials Section -->
+<section id="tutorials" class="pt-6 pb-14 bg-white-200">
+  <div class="container mx-auto px-6">
 
-  <!-- Button for Projects -->
-  <a href="#resources" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-2 w-full sm:w-auto">
-    <span>💻</span>
-    <span>Projects</span>
-  </a>
-</div>
+    <!-- Elevated Card for Tutorials Section -->
+    <div class="bg-white p-6 rounded-lg shadow-xl mb-6">
+      <div align="center">
+        <img src="https://github.com/user-attachments/assets/0273621a-0af7-472d-97e4-f23691017ef9" alt="vpc-example-private-subnets">
+      </div>
 
-  <h3 class="text-xl font-semibold text-black-800 mt-6">Get Involved:</h3><br>
-<p>Be a part of <strong>DevOps Hub</strong>, a comprehensive resource for learning and implementing DevOps practices. This repository is dedicated to sharing detailed notes, tutorials, and project examples on DevOps concepts, tools, and workflows. Here's how you can get involved:</p>
-<ul class="list-disc pl-6 mt-4 text-black-700">
-  <li><strong>Help improve our content:</strong> Found any issues or outdated content? Fix them or suggest updates.</li>
-  <li><strong>Share your knowledge:</strong> Add tutorials, best practices, or insights from your own experience.</li>
-  <li><strong>DevOps Tools:</strong> Contribute practical examples and implementations for tools like Jenkins, Docker, Kubernetes, Terraform, and more.</li>
-  <li><strong>Cloud Infrastructure:</strong> Enhance documentation on setting up and managing cloud environments with AWS, Azure, and other platforms.</li>
-</ul>
+      <p class="text-md text-black-700 mt-6 text-center text-justify">
+        Welcome to the <strong>DevOps Hub</strong>! It is designed to guide you through learning DevOps concepts with practical, step-by-step tutorials, project documentation, and notes. Whether you're new to <strong>DevOps/Cloud</strong> or want to deepen your expertise, this hub has everything you need. You'll find step-by-step guides covering a wide range of topics such as CI/CD pipelines, cloud platforms like AWS and Azure, Docker, Kubernetes, Terraform, and much more.
+      </p>
+      <div class="mt-6 flex justify-center space-x-6">
+        <!-- Button for Learning Notes -->
+        <a href="notes-mainpage.html" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>📚</span>
+          <span>Learning Notes</span>
+        </a>
 
+        <!-- Button for Projects -->
+        <a href="#resources" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>💻</span>
+          <span>Projects</span>
+        </a>
+      </div>
 
+      <h3 class="text-xl font-semibold text-black-800 mt-6">Get Involved:</h3><br>
+      <p>Be a part of <strong>DevOps Hub</strong>, a comprehensive resource for learning and implementing DevOps practices. This repository is dedicated to sharing detailed notes, tutorials, and project examples on DevOps concepts, tools, and workflows. Here's how you can get involved:</p>
+      <ul class="list-disc pl-6 mt-4 text-black-700">
+        <li><strong>Help improve our content:</strong> Found any issues or outdated content? Fix them or suggest updates.</li>
+        <li><strong>Share your knowledge:</strong> Add tutorials, best practices, or insights from your own experience.</li>
+        <li><strong>DevOps Tools:</strong> Contribute practical examples and implementations for tools like Jenkins, Docker, Kubernetes, Terraform, and more.</li>
+        <li><strong>Cloud Infrastructure:</strong> Enhance documentation on setting up and managing cloud environments with AWS, Azure, and other platforms.</li>
+      </ul>
 
-<h3 class="text-xl font-semibold text-gray-800 mt-6">Getting Started</h3>
-<ul class="list-disc pl-6 mt-4 text-gray-700">
-  <li class="mb-4">Clone this repository:
-    <pre class="overflow-x-auto bg-gray-100 p-4 rounded"><code>
+      <h3 class="text-xl font-semibold text-gray-800 mt-6">Getting Started</h3>
+      <ul class="list-disc pl-6 mt-4 text-gray-700">
+        <li class="mb-4">Clone this repository:
+          <pre class="overflow-x-auto bg-gray-100 p-4 rounded"><code>
 $ git clone https://github.com/Raghul-M/Devops-Hub.git
 </code></pre>
-  </li>
-  <li class="mb-4">Browse the documentation and start exploring the tutorials and projects.</li>
-  <li class="mb-4">Open issues or submit pull requests to improve or expand the content!</li>
-</ul>
+        </li>
+        <li class="mb-4">Browse the documentation and start exploring the tutorials and projects.</li>
+        <li class="mb-4">Open issues or submit pull requests to improve or expand the content!</li>
+      </ul>
 
-<h3 class="text-xl font-semibold text-gray-800 mt-6">Contribute</h3>
-<p class="text-gray-700 mt-4">
-  This repository is open for contributions! If you discover mistakes, have suggestions, or want to add new content, fork the repository and submit a pull request. Every contribution helps build a better DevOps community.Together, let's empower the DevOps ecosystem through knowledge sharing.
-</p>
+      <h3 class="text-xl font-semibold text-gray-800 mt-6">Contribute</h3>
+      <p class="text-gray-700 mt-4">
+        This repository is open for contributions! If you discover mistakes, have suggestions, or want to add new content, fork the repository and submit a pull request. Every contribution helps build a better DevOps community. Together, let's empower the DevOps ecosystem through knowledge sharing.
+      </p>
 
-<div class="mt-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full">
-  <!-- Button for Repository -->
-  <a href="https://github.com/Raghul-M/Devops-Hub" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition flex items-center justify-center gap-2 w-full sm:w-auto">
-    <span>📦</span>
-    <span>View Repository</span>
-  </a>
+      <div class="mt-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+        <!-- Button for Repository -->
+        <a href="https://github.com/Raghul-M/Devops-Hub" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>📦</span>
+          <span>View Repository</span>
+        </a>
 
-  <!-- Button for GitHub Profile -->
-  <a href="https://github.com/Raghul-M" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition flex items-center justify-center gap-2 w-full sm:w-auto">
-    <span>🌟</span>
-    <span>View GitHub Profile: Raghul M</span>
-  </a>
-</div>
-        
+        <!-- Button for GitHub Profile -->
+        <a href="https://github.com/Raghul-M" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition flex items-center justify-center gap-2 w-full sm:w-auto">
+          <span>🌟</span>
+          <span>View GitHub Profile: Raghul M</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
   </section>
   <!-- Footer -->
   <footer class="bg-black py-8">
@@ -188,4 +176,3 @@ $ git clone https://github.com/Raghul-M/Devops-Hub.git
 
 </body>
 </html>
-
