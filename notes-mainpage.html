@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Notes</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      text-align: center;
+      background-color: black;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    .main-content {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 50px; /* Logo size */
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+      .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards in a row */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Learning Notes</h1>
+  </header>
+
+  <main class="main-content">
+    <div class="card-container">
+      <div class="card" onclick="navigateTo('linux.html')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo">
+        <h3>Linux</h3>
+      </div>
+      <div class="card" onclick="navigateTo('git.html')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXp1dj5t9mzbsWoKNWSXW9UKkgyF45KAjuRA&s" alt="Git Logo">
+        <h3>Git</h3>
+      </div>
+      <div class="card" onclick="navigateTo('docker.html')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8QrGltZyVzyEJqz7Pr3MEe8c0z5cjm28ixA&s" alt="Docker Logo">
+        <h3>Docker</h3>
+      </div>
+      <div class="card" onclick="navigateTo('kubernetes.html')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
+        <h3>Kubernetes</h3>
+      </div>
+            <div class="card" onclick="navigateTo('kubernetes.html')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWGtD7TYD5FyeC534D0X6Hlh-WePHiD_EUA&s" alt="jenkins Logo">
+        <h3>Jenkins</h3>
+      </div>
+            <div class="card" onclick="navigateTo('kubernetes.html')">
+        <img src="https://miro.medium.com/v2/resize:fit:400/1*txwKGJOoQ2W0ka_9htbu0Q.png" alt="github actions Logo">
+        <h3>Github Actions</h3>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All rights reserved by Raghul M & CareerPod.</p>
+  </footer>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
