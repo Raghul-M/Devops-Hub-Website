@@ -69,6 +69,11 @@
       font-size: 1.5rem;
       margin-bottom: 10px;
     }
+    .not-ready {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
 
     footer {
       text-align: center;
@@ -121,10 +126,29 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWGtD7TYD5FyeC534D0X6Hlh-WePHiD_EUA&s" alt="jenkins Logo">
         <h3>Jenkins</h3>
       </div>
-            <div class="card" onclick="navigateTo('kubernetes.html')">
+            <div class="card" onclick="navigateTo('')">
         <img src="https://miro.medium.com/v2/resize:fit:400/1*txwKGJOoQ2W0ka_9htbu0Q.png" alt="github actions Logo">
         <h3>Github Actions</h3>
+     <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center text-white font-bold text-lg">
+    Coming Soon
+  </div>
       </div>
+             <div class="card" onclick="navigateTo('https://github.com/Raghul-M/Devops-Hub/blob/main/Core-Concepts/YAML/Readme.md')">
+        <img src="https://www.shareicon.net/data/512x512/2015/09/06/96691_file_512x512.png" alt="yaml Logo">
+        <h3>YAML</h3>
+      </div>
+      <div class="card" onclick="navigateTo('https://github.com/Raghul-M/Devops-Hub/blob/main/Core-Concepts/Networking/Readme.md')">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/955/143/non_2x/network-logo-free-vector.jpg" alt="networking Logo">
+        <h3>Networking</h3>
+      </div>
+            <div class="card" onclick="navigateTo('https://www.aviator.co/blog/wp-content/uploads/2023/01/terraform.png')">
+        <img src="https://adfinis.com/wp-content/uploads/sites/9/2022/07/HashiCorp_Terraform_Logo.png" alt="TERRAFORM Logo">
+        <h3>Terraform</h3>
+     <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center text-white font-bold text-lg">
+    Coming Soon
+  </div>
+      </div>
+
       <!-- Add more cards as needed -->
     </div>
   </main>
