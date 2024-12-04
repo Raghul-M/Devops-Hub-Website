@@ -143,6 +143,111 @@
 $ git config --global user.name "Your Name"
 $ git config --global user.email "your@email.com"
     </pre>
+   <h3>Git init:</h3>
+    <pre>
+$ git init
+    </pre>
+
+    <h3>Git Clone:</h3>
+    <pre>
+$ git clone <repository_url>
+    </pre>
+
+    <h3>Git add:</h3>
+    <pre>
+$ git add <filename>  [Or]
+$ git add .  # Adds all the files to staging area
+    </pre>
+
+    <h3>Git commit:</h3>
+    <pre>
+$ git commit -m "Commit message"
+    </pre>
+
+    <h3>Git status:</h3>
+    <pre>
+$ git status
+    </pre>
+
+    <h3>Git Log:</h3>
+    <pre>
+$ git log
+    </pre>
+
+    <h3>Git pull:</h3>
+    <pre>
+$ git pull origin <branch-name>
+    </pre>
+
+    <h3>Git push:</h3>
+    <pre>
+$ git push origin <branch-name>
+    </pre>
+
+    <h3>Git branch:</h3>
+    <pre>
+$ git branch  # Lists branches
+$ git branch feature  # Creates a new feature branch
+$ git checkout -b feature  # Creates and switches to the new feature branch
+    </pre>
+
+    <h3>Git checkout:</h3>
+    <pre>
+$ git checkout <branch>
+    </pre>
+
+    <h3>Git Merge:</h3>
+    <pre>
+$ git merge <source_branch>  # Merges feature branch to main
+    </pre>
+
+    <h3>Git fetch:</h3>
+    <pre>
+$ git fetch --all
+    </pre>
+
+    <h3>Git remote:</h3>
+    <pre>
+$ git remote -v  # View remote repositories
+    </pre>
+
+    <h3>Git reset:</h3>
+    <pre>
+$ git reset <file>  # Unstages a file
+$ git reset <commit>  # Resets to a specific commit
+    </pre>
+
+    <h3>Git diff:</h3>
+    <pre>
+$ git diff  # Shows the differences between changes
+    </pre>
+
+    <h3>Git stash:</h3>
+    <pre>
+$ git stash  # Stashes changes for later
+$ git stash pop  # Applies stashed changes
+$ git stash clear  # Clears all stashes
+    </pre>
+
+    <h3>Git remote add:</h3>
+    <pre>
+$ git remote add <remote_name> <repository_url>
+    </pre>
+
+    <h3>Git remote remove:</h3>
+    <pre>
+$ git remote remove <remote_name>
+    </pre>
+
+    <h3>Git help:</h3>
+    <pre>
+$ git help <command>
+    </pre>
+
+    <h3>Git Squash:</h3>
+    <pre>
+$ git rebase -i <commit_id>  # Interactive rebase to squash commits
+    </pre>
 
     <!-- Other Git commands sections here -->
 
